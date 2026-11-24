@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Control TV",
+    "slug": "control-tv",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "android": {
+      "package": "com.controltv.app",
+      "usesCleartextTraffic": true,
+      "permissions": ["INTERNET", "ACCESS_NETWORK_STATE", "ACCESS_WIFI_STATE", "VIBRATE"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.controltv.app",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "Para encontrar y controlar tu televisor en la red Wi-Fi.",
+        "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": true }
+      }
+    }
+  }
+}
